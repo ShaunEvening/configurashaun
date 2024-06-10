@@ -1,0 +1,20 @@
+[credential]
+	helper = osxkeychain
+[fetch]
+	prune = true
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
+[push]
+	default = current
+	followTags = true
+	autoSetupRemote = true
+[user]
+	email = goodeveningshaun@gmail.com
+	name = Shaun Evening
